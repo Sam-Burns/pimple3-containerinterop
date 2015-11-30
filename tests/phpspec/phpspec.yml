@@ -1,0 +1,7 @@
+suites:
+
+    src:
+        namespace:   SamBurns\Pimple3ContainerInterop
+        spec_prefix: SamBurnsSpec
+        src_path:    src/
+        spec_path:   tests/phpspec/
