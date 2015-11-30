@@ -4,7 +4,11 @@ namespace SamBurnsSpec\SamBurns\Pimple3ContainerInterop;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 use Pimple\Container as PimpleContainer;
+use SamBurns\Pimple3ContainerInterop\ServiceContainer;
 
+/**
+ * @mixin ServiceContainer
+ */
 class ServiceContainerSpec extends ObjectBehavior
 {
     function let(PimpleContainer $pimpleContainer)
