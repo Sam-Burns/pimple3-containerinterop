@@ -16,7 +16,7 @@ class ServiceContainerSpec extends ObjectBehavior
         $this->beConstructedWith($pimpleContainer);
     }
 
-    function it_is_initializable()
+    function it_is_initialisable()
     {
         $this->shouldHaveType('SamBurns\Pimple3ContainerInterop\ServiceContainer');
     }

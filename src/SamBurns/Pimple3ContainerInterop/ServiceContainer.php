@@ -56,7 +56,7 @@ class ServiceContainer implements ContainerInterface
         try {
             return $this->pimpleContainer[$serviceId];
         } catch (\Exception $exception) {
-            throw new ContainerException('Container exception occurred', 0, $exception);
+            throw new ContainerException('Pimple container exception occurred', 0, $exception);
         }
     }
 

@@ -12,7 +12,7 @@ class ExampleServiceProvider implements ServiceProviderInterface
     public function register(PimpleContainer $container)
     {
         $container['example-service'] =
-            function (PimpleContainer $container) {
+            function () {
                 return new \stdClass();
             };
     }

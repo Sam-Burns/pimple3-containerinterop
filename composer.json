@@ -1,7 +1,7 @@
 {
     "name": "samburns/pimple3-containerinterop",
 
-    "version": "1.0.1",
+    "version": "1.0.2",
 
     "license": "MIT",
 
@@ -26,7 +26,7 @@
 
     "autoload-dev": {
         "psr-0": {
-            "SamBurns\\Pimple3ContainerInterop\\Dev": "src-dev"
+            "SamBurns\\Pimple3ContainerInterop\\Dev\\": "src-dev/"
         }
     }
 }

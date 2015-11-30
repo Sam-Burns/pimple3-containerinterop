@@ -6,7 +6,7 @@ use Prophecy\Argument;
 
 class NotFoundExceptionSpec extends ObjectBehavior
 {
-    function it_is_initializable()
+    function it_is_initialisable()
     {
         $this->shouldHaveType('SamBurns\Pimple3ContainerInterop\Exception\NotFoundException');
     }
