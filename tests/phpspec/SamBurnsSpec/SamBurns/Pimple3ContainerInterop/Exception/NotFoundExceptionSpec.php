@@ -8,7 +8,7 @@ class NotFoundExceptionSpec extends ObjectBehavior
 {
     function it_is_initializable()
     {
-        $this->shouldHaveType('SamBurns\Pimple3ContainerInterop\Exception\ServiceNotFoundInContainer');
+        $this->shouldHaveType('SamBurns\Pimple3ContainerInterop\Exception\NotFoundException');
     }
 
     function it_is_an_exception()
