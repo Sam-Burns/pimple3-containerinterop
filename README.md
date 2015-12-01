@@ -49,6 +49,11 @@ use My\ServiceProvider;
 $container = ServiceContainer::constructConfiguredWith(new ServiceProvider());
 ```
 
+Similar Projects
+----------------
+
+[PimpleInterop](https://github.com/moufmouf/pimple-interop) and [Acclimate](https://github.com/jeremeamia/acclimate-container) provide excellent alternatives if you don't like this library.  Although using Pimple v1 and not v3, they do offer the 'delegate lookup' feature described as optional in the standard, allowing you to combine multiple containers.
+
 Contributions
 -------------
 
