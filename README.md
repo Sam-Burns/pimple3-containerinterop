@@ -11,10 +11,15 @@ Introduction
 
 It works in PHP 5.5, 5.6 and 7.0.
 
-Use
----
+Use - Service Retrieval
+-----------------------
 
-You can configure the Pimple container before wrapping it in a standards-compliant adapter...
+As per the standard, ```$container->has($serviceId)``` will tell you if a service is configured in the container.  ```$container->get($serviceId)``` will retrieve the service.  An implementation of ```Interop\Container\Exception\NotFoundException``` is thrown if you call ```get()``` and the service doesn't exist.  All other errors from Pimple result in an instance of ```Interop\Container\Exception\ContainerException``` being thrown.
+
+Use - Configuration
+-------------------
+
+You can configure the Pimple container before wrapping it in a standards-compliant adapter:
 
 ```php
 use Pimple\Container as PimpleContainer;
