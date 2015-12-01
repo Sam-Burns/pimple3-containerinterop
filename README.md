@@ -1,8 +1,8 @@
 [![Build Status](https://travis-ci.org/Sam-Burns/pimple3-containerinterop.svg?branch=master)](https://travis-ci.org/Sam-Burns/pimple3-containerinterop)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Sam-Burns/pimple3-containerinterop/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Sam-Burns/pimple3-containerinterop/?branch=master)
 
-Container Interop Adapter for Pimple 3
-======================================
+Pimple3-ContainerInterop
+========================
 
 Introduction
 ------------
