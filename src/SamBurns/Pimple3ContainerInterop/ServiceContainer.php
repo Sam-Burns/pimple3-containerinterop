@@ -9,7 +9,7 @@ use SamBurns\Pimple3ContainerInterop\Exception\NotFoundException;
 use Interop\Container\Exception\ContainerException as ContainerExceptionInterface;
 use Interop\Container\Exception\NotFoundException as NotFoundExceptionInterface;
 
-class ServiceContainer implements ContainerInterface
+class ServiceContainer implements ContainerInterface, \ArrayAccess
 {
     /** @var PimpleContainer */
     private $pimpleContainer;
@@ -67,5 +67,25 @@ class ServiceContainer implements ContainerInterface
     public function has($serviceId)
     {
         return isset($this->pimpleContainer[$serviceId]);
+    }
+
+    public function offsetGet($serviceId)
+    {
+        $this->get($serviceId);
+    }
+
+    public function offsetExists($serviceId)
+    {
+        return $this->has($serviceId);
+    }
+
+    public function offsetUnset($serviceId)
+    {
+        $this->pimpleContainer->offsetUnset($serviceId);
+    }
+
+    public function offsetSet($serviceId, $value)
+    {
+        $this->pimpleContainer->offsetSet($serviceId, $value);
     }
 }
