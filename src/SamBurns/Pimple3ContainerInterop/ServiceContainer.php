@@ -88,4 +88,9 @@ class ServiceContainer implements ContainerInterface, \ArrayAccess
     {
         $this->pimpleContainer->offsetSet($serviceId, $value);
     }
+
+    public function __call($name, $arguments)
+    {
+        call_user_func_array([$this->pimpleContainer, $name], $arguments);
+    }
 }
