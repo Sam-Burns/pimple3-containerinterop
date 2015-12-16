@@ -11,6 +11,13 @@ Introduction
 
 It works in PHP 5.5, 5.6 and 7.0.
 
+User - Direct Pimple Access
+---------------------------
+
+The wrapper allows full access to all Pimple functionality, via a ```__call()``` method, and ```ArrayAccess```
+implementation.  This allows you to call any method that exists in Pimple, directly on the wrapper.  You can also add
+services using ```$container['service-id'] = //something```, as array access is supported.
+
 Use - Service Retrieval
 -----------------------
 
