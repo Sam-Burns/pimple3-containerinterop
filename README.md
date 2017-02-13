@@ -23,6 +23,13 @@ Use - Service Retrieval
 
 As per the standard, ```$container->has($serviceId)``` will tell you if a service is configured in the container.  ```$container->get($serviceId)``` will retrieve the service.  An implementation of ```Interop\Container\Exception\NotFoundException``` is thrown if you call ```get()``` and the service doesn't exist.  All other errors from Pimple result in an instance of ```Interop\Container\Exception\ContainerException``` being thrown.
 
+Use - Installation
+------------------
+It is recommended to install this via [composer]:
+```bash
+composer require samburns/pimple3-containerinterop
+```
+
 Use - Configuration
 -------------------
 
@@ -65,3 +72,5 @@ Contributions
 -------------
 
 Contributions welcome.  Fork the repo, make your changes, and create a pull request.  To run the tests, type ```./bin/test```.  PHPUnit integration tests and PHPSpec unit tests will run.
+
+[composer]: https://getcomposer.org/
