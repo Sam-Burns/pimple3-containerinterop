@@ -71,7 +71,7 @@ class ServiceContainer implements ContainerInterface, \ArrayAccess
 
     public function offsetGet($serviceId)
     {
-        $this->get($serviceId);
+        return $this->get($serviceId);
     }
 
     public function offsetExists($serviceId)
